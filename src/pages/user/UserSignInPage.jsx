@@ -3,7 +3,7 @@ import UserSignIn from '../../components/user/UserSignIn'
 
 function UserSignInPage() {
   return (
-    <div className='bg-zinc-800'>
+    <div>
         <UserSignIn/>
         </div>
   )

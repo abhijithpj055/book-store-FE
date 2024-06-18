@@ -1,5 +1,6 @@
 import React from 'react'
 import BOOK from '../../assets/book.jpg'
+import { Link } from 'react-router-dom'
 
 function Hero() {
   return (
@@ -12,9 +13,9 @@ function Hero() {
             Uncover captivatiing stories,enriching knowledge, and endless inspiration in our curated collection of books...
         </p>
         <div className='mt-8'>
-        <button className='text-yellow-100 text-xl  lg:text-2xl font-semibold border border-yellow-100 px-10 py-3 hover:bg-zinc-800 rounded-full'>
+        <Link to='/user/signin' className='text-yellow-100 text-xl  lg:text-2xl font-semibold border border-yellow-100 px-10 py-3 hover:bg-zinc-800 rounded-full'>
             Discover Books
-        </button>
+        </Link>
 
         </div>
         </div>
