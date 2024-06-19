@@ -49,7 +49,7 @@ export default function BookAdd() {
     };
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/admin/add-courses",
+        "https://book-store-be-71pw.onrender.com/api/v1/admin/add-courses",
         requestBody,
         {
           withCredentials: true,
@@ -64,10 +64,10 @@ export default function BookAdd() {
     }
   };
   return (
-    <div className="flex h-screen w-screen items-center justify-center ">
+    <div className='h-[80vh] bg-zinc-400 px-12 py-8 flex flex-col items-center justify-center'>
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="flex flex-col gap-y-2 rounded-md border p-6"
+        className="flex flex-col p-6 shadow-md rounded-md border gap-y-5 bg-zinc-800"
       >
         <input
           {...register("title")}

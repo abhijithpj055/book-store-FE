@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom'
 function UserNavbar() {
     const navLinks=[
         {
-            path:"/userdashboard",
-            value:"Home"
+            path:"/user/dashboard",
+            value:"Dashboard"
         },
         {
             path:"/contact-us",
