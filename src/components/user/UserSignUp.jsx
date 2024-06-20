@@ -20,7 +20,7 @@ function UserSignUp() {
 
   const onSubmit = async (data) => {
     try {
-      const res = await axios.post("https://book-store-be-71pw.onrender.com//api/v1/user/signup", data, { withCredentials: true })
+      const res = await axios.post("https://book-store-be-71pw.onrender.com/api/v1/user/signup", data, { withCredentials: true })
 
       console.log(res.data);
       navigate('/user/dashboard', { replace: true })
