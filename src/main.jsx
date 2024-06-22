@@ -13,6 +13,9 @@ import AdminDashBoardPage from './pages/admin/AdminDashBoardPage';
 import UserLayout from './layouts/UserLayout';
 import UserDashBoardPage from './pages/user/UserDashBoardPage';
 import BookAdd from './components/admin/BookAdd';
+import { ChakraProvider } from '@chakra-ui/react'
+import UserList from './components/admin/UserList';
+
 
 
 const router=createBrowserRouter([
@@ -51,6 +54,10 @@ const router=createBrowserRouter([
       {
         path:'/admin/add-books',
         element:<BookAdd/>
+      },
+      {
+        path:'/admin/get-users',
+        element:<UserList/>
       }
     ]
   },
@@ -67,6 +74,8 @@ const router=createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <ChakraProvider>
     <RouterProvider router={router}/>
+    </ChakraProvider>
   </React.StrictMode>
 )
