@@ -40,7 +40,7 @@ const UserList = () => {
                       <button
                         onClick={async () => {
                           const res = await axios.delete(
-                            `https://book-store-be-71pw.onrender.com/api/v1/instructor/delete-user/${user._id}`,
+                            `https://book-store-be-71pw.onrender.com/api/v1/admin/delete-user/${user._id}`,
                           );
                           const data = await res.data;
                           console.log(data);
