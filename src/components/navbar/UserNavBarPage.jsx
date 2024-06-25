@@ -40,6 +40,10 @@ function UserNavbar() {
             <Link to="/user/get-cart" className='px-2 py-1 border border-blue-500 rounded hover:bg-white hover:text-zinc-800 transition-all duration-300'>
                 Cart
             </Link>
+            <Link to='/profile' className='px-2 py-1 bg-blue-500 rounded hover:bg-white hover:text-zinc-800 transition-all duration-300'>
+                Profile
+            </Link>
+
             <Link to='/' className='px-2 py-1 bg-blue-500 rounded hover:bg-white hover:text-zinc-800 transition-all duration-300'>
                 Sign Out
             </Link>

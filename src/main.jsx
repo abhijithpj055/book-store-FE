@@ -15,6 +15,10 @@ import UserDashBoardPage from './pages/user/UserDashBoardPage';
 import BookAdd from './components/admin/BookAdd';
 import { ChakraProvider } from '@chakra-ui/react'
 import UserList from './components/admin/UserList';
+// import RecentlyAddedBooks from './components/home/RecentlyAddedBooks';
+import AllBooks from './pages/AllBooks';
+import BookDetails from './components/bookDetails/BookDetails';
+import Profile from './pages/Profile';
 
 
 
@@ -67,6 +71,18 @@ const router=createBrowserRouter([
       {
         path:'/user/dashboard',
         element:<UserDashBoardPage/>
+      },
+      {
+        path:'/user/get-books',
+        element:<AllBooks/>
+      },
+      {
+        path:'/view-book-details/:id',
+        element:<BookDetails/>
+      },
+      {
+        path:'/profile',
+        element:<Profile/>
       }
     ]
   }

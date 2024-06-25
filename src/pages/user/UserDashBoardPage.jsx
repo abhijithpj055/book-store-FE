@@ -1,5 +1,5 @@
 import React from 'react'
-// import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import  BOOK from '../../assets/book1.png'
 function UserDashBoardPage() {
   return (
@@ -17,17 +17,19 @@ function UserDashBoardPage() {
     "A book is a garden, an orchard, a storehouse, a party, a company by the way, a counselor, a multitude of counselors." – Charles Baudelaire
 
     </p>
-    {/* <div className='mt-8'>
-    <Link to='/user/signin' className='text-yellow-100 text-xl  lg:text-2xl font-semibold border border-yellow-100 px-10 py-3 hover:bg-zinc-800 rounded-full'>
-        Discover Books
-    </Link> */}
+    <div className='mt-8'>
+    <Link to='/user/get-books' className='text-yellow-100 text-xl  lg:text-2xl font-semibold border border-yellow-100 px-10 py-3 hover:bg-zinc-800 rounded-full'>
+        All Books
+    </Link> 
 
-    {/* </div> */}
+     </div>
     </div>
     <div className='w-full  lg:w-3/6 h-auto lg:h-[100%] flex items-center justify-center '>
     <img src={BOOK} alt="book" />
     </div>
+    
 </div>
+
 
 )
 }
