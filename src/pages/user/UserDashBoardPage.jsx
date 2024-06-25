@@ -18,8 +18,9 @@ function UserDashBoardPage() {
 
     </p>
     <div className='mt-8'>
+    
     <Link to='/user/get-books' className='text-yellow-100 text-xl  lg:text-2xl font-semibold border border-yellow-100 px-10 py-3 hover:bg-zinc-800 rounded-full'>
-        All Books
+        View Books
     </Link> 
 
      </div>
