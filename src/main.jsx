@@ -19,6 +19,8 @@ import UserList from './components/admin/UserList';
 import AllBooks from './pages/AllBooks';
 import BookDetails from './components/bookDetails/BookDetails';
 import Profile from './pages/Profile';
+import ContactUs from './pages/ContactUs';
+import About from './pages/About';
 
 
 
@@ -45,6 +47,14 @@ const router=createBrowserRouter([
       {
         path:'/admin/signup',
         element:<AdminSignUpPage/>
+      },
+      {
+        path:'/contact-us',
+        element:<ContactUs/>
+      },
+      {
+        path:'/about',
+        element:<About/>
       }
     ]
   },
@@ -83,6 +93,9 @@ const router=createBrowserRouter([
       {
         path:'/profile',
         element:<Profile/>
+      },
+      {
+        path:'/cart'
       }
     ]
   }
