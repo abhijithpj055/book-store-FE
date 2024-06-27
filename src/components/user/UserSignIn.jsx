@@ -20,8 +20,10 @@ function UserSignIn() {
     const navigate=useNavigate()
 
     const onSubmit = async(data) => {
+
+      console.log(data)
       try{
-        const res= await axios.post("https://book-store-be-71pw.onrender.com/api/v1/user/signin",data,{withCredentials:true})
+        const res= await axios.post("http://localhost:3000/api/v1/user/signin",data,{withCredentials:true})
 
          console.log(res.data);
          navigate('/user/dashboard',{replace:true})
