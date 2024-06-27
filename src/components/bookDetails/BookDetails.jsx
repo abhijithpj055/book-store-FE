@@ -10,7 +10,7 @@ function BookDetails() {
   const [Data, setData] = useState({})
   useEffect(() => {
     const getData = async () => {
-      const res = await axios.get(`https://book-store-be-71pw.onrender.com/api/v1/user/get-book-by-id/${id}`)
+      const res = await axios.get(`http://localhost:3000/api/v1/user/get-book-by-id/${id}`)
       console.log(res)
       const bookData = await res.data;
       setData(bookData)
